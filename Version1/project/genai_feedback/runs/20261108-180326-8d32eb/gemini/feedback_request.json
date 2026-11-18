@@ -1,0 +1,41 @@
+{
+  "model": "gemini-3.8-flash",
+  "original_requirement": "生成一张产品展示风格的静物图。白色桌面上恰好有两个瓶子：左边是蓝色玻璃瓶，右边是黄色玻璃瓶。一个完整的绿色苹果放在两个瓶子前方。背景为纯白色，不要出现标签、品牌标志或文字。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "恰好两个瓶子"
+    },
+    {
+      "id": "C2",
+      "text": "左边瓶子为蓝色玻璃瓶"
+    },
+    {
+      "id": "C3",
+      "text": "右边瓶子为黄色玻璃瓶"
+    },
+    {
+      "id": "C4",
+      "text": "恰好一个完整的绿色苹果"
+    },
+    {
+      "id": "C5",
+      "text": "苹果位于两个瓶子前方"
+    },
+    {
+      "id": "C6",
+      "text": "物体放在白色桌面上"
+    },
+    {
+      "id": "C7",
+      "text": "背景主要为纯白色"
+    },
+    {
+      "id": "C8",
+      "text": "没有标签、品牌标志或可见文字"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "f30711b8d5c6bfd34e320a77d1a511335e037ade6f04a57a0f51c9f9ae7c8f94"
+}

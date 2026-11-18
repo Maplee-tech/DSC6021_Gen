@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-sol",
+  "original_requirement": "生成一张简洁的咖啡店宣传配图。木桌上恰好有一个红色陶瓷杯；从观看者视角看，杯子右侧有两个彼此分开的牛角包。背景为浅米色，画面上方留出约四分之一的空白区域，不要出现任何文字。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "恰好一个杯子"
+    },
+    {
+      "id": "C2",
+      "text": "杯子主体为红色"
+    },
+    {
+      "id": "C3",
+      "text": "恰好两个彼此分开的牛角包"
+    },
+    {
+      "id": "C4",
+      "text": "两个牛角包都在杯子右侧，以观看者视角判断"
+    },
+    {
+      "id": "C5",
+      "text": "杯子和牛角包位于木桌上"
+    },
+    {
+      "id": "C6",
+      "text": "背景主要为浅米色"
+    },
+    {
+      "id": "C7",
+      "text": "上方约四分之一区域没有主要物体，适合添加标题"
+    },
+    {
+      "id": "C8",
+      "text": "没有可见文字"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "adbd5b87f2b02dba493412928336b441fd1ab9bb698f89666f49c49dda7c0c27"
+}

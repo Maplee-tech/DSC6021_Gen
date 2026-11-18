@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"checks\": [\n    {\"id\": \"C1\", \"status\": \"pass\", \"evidence\": \"画面中只有两个瓶子。\"},\n    {\"id\": \"C2\", \"status\": \"pass\", \"evidence\": \"左侧为蓝色透明玻璃瓶。\"},\n    {\"id\": \"C3\", \"status\": \"pass\", \"evidence\": \"右侧为黄色透明玻璃瓶。\"},\n    {\"id\": \"C4\", \"status\": \"pass\", \"evidence\": \"正前方有一个完整的青苹果。\"},\n    {\"id\": \"C5\", \"status\": \"pass\", \"evidence\": \"苹果位于两瓶正前方。\"},\n    {\"id\": \"C6\", \"status\": \"pass\", \"evidence\": \"物体置于白色台面上。\"},\n    {\"id\": \"C7\", \"status\": \"pass\", \"evidence\": \"纯白简洁背景。\"},\n    {\"id\": \"C8\", \"status\": \"pass\", \"evidence\": \"瓶身和整体无文字或标识。\"}\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张产品展示风格的静物图。白色桌面上恰好有两个瓶子：左边是蓝色玻璃瓶，右边是黄色玻璃瓶。一个完整的绿色苹果放在两个瓶子前方。背景为纯白色，不要出现标签、品牌标志或文字。\"\n}\n```",
+            "thoughtSignature": "EtIGCs8GAWkUfRNJxdncxKgZxLVDr09JOw+mzWlS/bdsoMS6D+h/6lHRSMn3SEWY0WEdp5WK+ug7ItqrlEd40eeaQBckrapAE8+v4PX26sCoxrfCsOFhIxZ1LK2LYoXTl5zndlnqeRQGwOl4EKYcSops8YUKPRHG2RzE6hfMroxFSjmHFfrNprX8ltDxvQNvv7OPJkEsk9AGg3LA3tpqZb+NeJSXhoq5uCLIXAnPtqcAo+0232aapPPqesifCYhfTrf1X3IIDTouRsdFQrc7JsP9/wcwxC8NyvHfy5spmN+kHmkGukwEaZkP5iI4c4xSD/IzJI7W0E99R3RwDETVG4Bh7FmTvJfcYz8oyZ8jzjUmqrIIQyhAUV3GM/dEYHFQQod0srKY6i0gj1oTbvA89mqGDxzyE9Pc05SWKDA39OmNXDzolJT6PSNG/APRsqi2uYW+xstNH8/wT3e2G9ZYvcViqZHeKYm4xr1yPvJmpksa9jg7JlsJ3iWAWFfPt7//5oO/8t8CW8mAI7D9exm/P2JACLt9EmHy0+h0c3G8mxsmU2PaF9Nz5I3aOR4tNUBVLZXxOmjaUHEhcvk1BwvdGWy5JIKcsR6dc2oVm7+9fYOp6u1KQvkO0jRIF5nIUeNd7tVJwuSulLIcyFrb9NgSbLNBno7jA3cpC+Egc179/oRgYyWpEyPgozEWnTaGjSSazLKyuXB3pvh7FJEGpLekPrx6ePhNlx6YJchz1asdAgSE3+xGbUJ0Tebcee1UM0EWkNZHndCWpkxz2TYuUs20AVlKnzvGcCUP4NGCnGY3P0JW/BKhultZl22/8uCcKmcisF2suXTjVZd/Gz3GepOrnqqD6Rk5Q+Hfsz1NZsIYWKhF9vP1CM2Cykjqn6lWVzQKXu0+eBXMJ1vXoU2qOSPrVJbryEkYICIhNSvRz2xU4vqJm14eEkcEBnrFVJIt1C1mGMDx+66jItxdf72T7JBWwtd9sJbpUjDVyA4So3kYjBofU+knW/LD4jO6cRibjjEw93/aYI+gT3FixN+BzyXwjgmKpEUAI1OxQXI0xrhjEyJG9srM/UIbS7/WjUXZ1d/ta87Z4DlkkQsdkpB4wA3xXnRCXfbP7uqbLTEBdUln6gD8+gQz7Q=="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP"
+    }
+  ],
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "IUnwatLFMJ7e0_gP7cHx0QI",
+  "usageMetadata": {
+    "candidatesTokenCount": 309,
+    "promptTokenCount": 1365,
+    "thoughtsTokenCount": 203,
+    "totalTokenCount": 1877
+  }
+}

@@ -1,0 +1,16 @@
+```json
+{
+  "checks": [
+    {"id": "C1", "status": "pass", "evidence": "画面中只有两个瓶子。"},
+    {"id": "C2", "status": "pass", "evidence": "左侧为蓝色透明玻璃瓶。"},
+    {"id": "C3", "status": "pass", "evidence": "右侧为黄色透明玻璃瓶。"},
+    {"id": "C4", "status": "pass", "evidence": "正前方有一个完整的青苹果。"},
+    {"id": "C5", "status": "pass", "evidence": "苹果位于两瓶正前方。"},
+    {"id": "C6", "status": "pass", "evidence": "物体置于白色台面上。"},
+    {"id": "C7", "status": "pass", "evidence": "纯白简洁背景。"},
+    {"id": "C8", "status": "pass", "evidence": "瓶身和整体无文字或标识。"}
+  ],
+  "priority_fixes": [],
+  "revised_prompt": "生成一张产品展示风格的静物图。白色桌面上恰好有两个瓶子：左边是蓝色玻璃瓶，右边是黄色玻璃瓶。一个完整的绿色苹果放在两个瓶子前方。背景为纯白色，不要出现标签、品牌标志或文字。"
+}
+```

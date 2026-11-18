@@ -1,0 +1,60 @@
+【产品说明】
+目前虽然有很多文本生图的软件以及接口，但是对于大部分普通用户来说，用户可能自己也不清楚自己要什么，所以他们会给一段非常模糊的描述，然后系统给出一些稀奇古怪的图片。这个过程会消耗用户大量时间，去不断的和系统微调，然后系统生成的图片可能还是不符合用户心里所想。
+所以我们希望在这个产品里面，辅助用户去生成比较优质的prompt，然后引导用户通过文字激发出来自己心里所想，最终生成一个尽可能符合用户预期的图片
+
+【样例】
+现在提供一个具体的例子：
+1. 用户输入：“请生成一个赛博朋克风格的书店”
+2. 调用api，系统接收到这个输入，将他转为优质prompt例如
+{
+  "version": "prompt_ir/1.0",
+  "user_input": "请生成一个赛博朋克风格的书店",
+  "summary": "赛博朋克风格书店，雨夜霓虹街区外景（待确认）",
+  "fields": {
+    "subject": {
+      "value": "书店，书架与书籍",
+      "source": "user",
+      "confidence": 0.95,
+      "locked": true
+    },
+    "scene": {
+      "value": "雨夜霓虹街区外景",
+      "source": "inferred",
+      "confidence": 0.45,
+      "locked": false,
+      "options": ["雨夜街区外景", "书店室内", "室内外结合"]
+    },
+    "style": {
+      "value": "赛博朋克，写实概念艺术",
+      "source": "user+inferred",
+      "confidence": 0.8,
+      "options": ["写实概念艺术", "动漫插画", "3D渲染"]
+    },
+    "composition": {
+      "value": "广角、平视、16:9",
+      "source": "default",
+      "confidence": 0.5
+    },
+    "lighting": {
+      "value": "霓虹青/洋红，湿润反光，店内暖光对比",
+      "source": "inferred",
+      "confidence": 0.6
+    },
+    "details": {
+      "value": ["全息招牌", "电缆", "密集城市", "书籍细节"],
+      "source": "inferred",
+      "confidence": 0.5
+    }
+  },
+  "negative": ["低清晰度", "模糊", "畸形", "乱码文字", "过曝"],
+  "params": {"aspect_ratio": "16:9"},
+  "questions": [
+    {
+      "field": "scene",
+      "question": "书店更偏哪种场景？",
+      "options": ["雨夜街区外景", "书店室内", "室内外结合"]
+    }
+  ]
+}
+在用户端看来他只是做选项，同时提供给用户自己输入文本的权力
+3. 最终汇总出优质prompt

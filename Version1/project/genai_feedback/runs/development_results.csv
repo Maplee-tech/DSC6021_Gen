@@ -1,0 +1,10 @@
+task_id,branch,feedback_model,draw_model,success,error,mock
+20261108-175136-eb0050,gpt,gpt-6-sol,gemini-3.1-flash-image,True,,False
+20261108-175136-eb0050,gemini,gemini-3.8-flash,gemini-3.1-flash-image,True,,False
+20261108-175136-eb0050,deepseek,deepseek-flash,gemini-3.1-flash-image,True,,False
+20261108-180326-8d32eb,gpt,gpt-6-sol,gemini-3.1-flash-image,True,,False
+20261108-180326-8d32eb,gemini,gemini-3.8-flash,gemini-3.1-flash-image,True,,False
+20261108-180326-8d32eb,deepseek,deepseek-flash,gemini-3.1-flash-image,True,,False
+20261108-180639-9ed994,gpt,gpt-6-sol,gemini-3.1-flash-image,True,,False
+20261108-180639-9ed994,gemini,gemini-3.8-flash,gemini-3.1-flash-image,True,,False
+20261108-180639-9ed994,deepseek,deepseek-flash,gemini-3.1-flash-image,True,,False

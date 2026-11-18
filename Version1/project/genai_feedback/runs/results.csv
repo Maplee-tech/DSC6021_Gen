@@ -1,0 +1,16 @@
+task_id,branch,feedback_model,draw_model,success,error,mock
+20261108-154643-c17eb2,gpt,gpt6.0sol,deepseek-v4.1-flash,True,,True
+20261108-154643-c17eb2,gemini,gemini-3.8-flash,deepseek-v4.1-flash,True,,True
+20261108-154643-c17eb2,deepseek,deepseek-v4-pro,deepseek-v4.1-flash,True,,True
+20261108-155543-36f532,gpt,gpt6.0sol,deepseek-v4.1-flash,True,,True
+20261108-155543-36f532,gemini,gemini-3.8-flash,deepseek-v4.1-flash,True,,True
+20261108-155543-36f532,deepseek,deepseek-v4-pro,deepseek-v4.1-flash,True,,True
+20261108-164643-94542b,gpt,gpt-6-sol,gpt-image-2.6,True,,True
+20261108-164643-94542b,gemini,gemini-3.8-flash,gpt-image-2.6,True,,True
+20261108-164643-94542b,deepseek,deepseek-flash,gpt-image-2.6,True,,True
+20261108-172556-cb08d7,gpt,gpt-6-sol,gpt-6.1-sol,True,,True
+20261108-172556-cb08d7,gemini,gemini-3.8-flash,gpt-6.1-sol,True,,True
+20261108-172556-cb08d7,deepseek,deepseek-flash,gpt-6.1-sol,True,,True
+20261108-173407-5280f3,gpt,gpt-6-sol,gemini-3.1-flash-image,True,,False
+20261108-173407-5280f3,gemini,gemini-3.8-flash,gemini-3.1-flash-image,True,,False
+20261108-173407-5280f3,deepseek,deepseek-flash,gemini-3.1-flash-image,True,,False

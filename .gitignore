@@ -1,0 +1,19 @@
+# Local environments and caches
+.venv/
+venv/
+.cache/
+.python/
+.tools/
+__pycache__/
+*.py[cod]
+node_modules/
+.DS_Store
+.vscode/
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+# Local generated sessions and archives
+tasks/
+*.zip

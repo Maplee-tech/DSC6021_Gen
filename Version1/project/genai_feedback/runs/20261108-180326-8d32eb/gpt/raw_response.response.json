@@ -1,0 +1,30 @@
+{
+  "id": "resp_0b1164e884cbe06d016af0490233a887d0891a09eaff41ddac",
+  "object": "chat.completion",
+  "created": 1794132226,
+  "model": "gpt-6-sol",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面中可见且仅有两个瓶子。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"左侧瓶子为蓝色透明玻璃瓶。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"右侧瓶子为黄色透明玻璃瓶。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"画面中可见一个完整的绿色苹果。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"绿色苹果位于两个瓶子的前方，并遮挡了瓶子下部的一部分。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"瓶子和苹果均放置在白色桌面上。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"背景整体为白色，仅有轻微的光影变化。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"未见标签、品牌标志或可见文字。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张产品展示风格的静物图。白色桌面上恰好有两个瓶子：左边是蓝色玻璃瓶，右边是黄色玻璃瓶。一个完整的绿色苹果放在两个瓶子前方。背景为纯白色，不要出现标签、品牌标志或文字。\"}",
+        "reasoning_content": "**Structuring image inspection JSON**",
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "native_finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 1111,
+    "total_tokens": 16754,
+    "prompt_tokens": 15643,
+    "prompt_tokens_details": {
+      "cached_tokens": 11068
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 320
+    }
+  }
+}

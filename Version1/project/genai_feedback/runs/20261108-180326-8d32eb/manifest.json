@@ -1,0 +1,189 @@
+{
+  "task_id": "20261108-180326-8d32eb",
+  "mock": false,
+  "started_at": 1794132206.58767,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 1111,
+          "total_tokens": 16754,
+          "prompt_tokens": 15643,
+          "prompt_tokens_details": {
+            "cached_tokens": 11068
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 320
+          }
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面中可见且仅有两个瓶子。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"左侧瓶子为蓝色透明玻璃瓶。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"右侧瓶子为黄色透明玻璃瓶。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"画面中可见一个完整的绿色苹果。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"绿色苹果位于两个瓶子的前方，并遮挡了瓶子下部的一部分。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"瓶子和苹果均放置在白色桌面上。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"背景整体为白色，仅有轻微的光影变化。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"未见标签、品牌标志或可见文字。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张产品展示风格的静物图。白色桌面上恰好有两个瓶子：左边是蓝色玻璃瓶，右边是黄色玻璃瓶。一个完整的绿色苹果放在两个瓶子前方。背景为纯白色，不要出现标签、品牌标志或文字。\"}"
+      },
+      "feedback_latency_seconds": 14.93,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1545,
+          "promptTokenCount": 58,
+          "totalTokenCount": 1603
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 15.32
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 309,
+          "promptTokenCount": 1365,
+          "thoughtsTokenCount": 203,
+          "totalTokenCount": 1877
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\"id\": \"C1\", \"status\": \"pass\", \"evidence\": \"画面中只有两个瓶子。\"},\n    {\"id\": \"C2\", \"status\": \"pass\", \"evidence\": \"左侧为蓝色透明玻璃瓶。\"},\n    {\"id\": \"C3\", \"status\": \"pass\", \"evidence\": \"右侧为黄色透明玻璃瓶。\"},\n    {\"id\": \"C4\", \"status\": \"pass\", \"evidence\": \"正前方有一个完整的青苹果。\"},\n    {\"id\": \"C5\", \"status\": \"pass\", \"evidence\": \"苹果位于两瓶正前方。\"},\n    {\"id\": \"C6\", \"status\": \"pass\", \"evidence\": \"物体置于白色台面上。\"},\n    {\"id\": \"C7\", \"status\": \"pass\", \"evidence\": \"纯白简洁背景。\"},\n    {\"id\": \"C8\", \"status\": \"pass\", \"evidence\": \"瓶身和整体无文字或标识。\"}\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张产品展示风格的静物图。白色桌面上恰好有两个瓶子：左边是蓝色玻璃瓶，右边是黄色玻璃瓶。一个完整的绿色苹果放在两个瓶子前方。背景为纯白色，不要出现标签、品牌标志或文字。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 15.41,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1546,
+          "promptTokenCount": 58,
+          "totalTokenCount": 1604
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 14.85
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 974,
+          "completion_tokens": 583,
+          "total_tokens": 1557,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 219
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 974
+        },
+        "raw_response": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中只有左侧蓝色瓶和右侧黄色瓶两个瓶子。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"左侧瓶身为蓝色透明玻璃质感。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"右侧瓶身为黄色透明玻璃质感。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中恰好有一个完整的绿色苹果。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"绿色苹果位于两个瓶子前方，并遮挡住瓶身下部。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"瓶子与苹果放置在白色桌面上。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景为接近纯白的浅色，没有明显杂物。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"瓶身和画面中均未出现标签、品牌标志或可见文字。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张产品展示风格的静物图。白色桌面上恰好有两个瓶子：左边是蓝色玻璃瓶，右边是黄色玻璃瓶。一个完整的绿色苹果放在两个瓶子前方。背景为纯白色，不要出现标签、品牌标志或文字。\"\n}"
+      },
+      "feedback_latency_seconds": 8.07,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1520,
+          "promptTokenCount": 58,
+          "totalTokenCount": 1578
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 14.09
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 4,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794132206.5876749,
+      "success": true,
+      "latency_seconds": 13.36,
+      "finished_at": 1794132219.950644
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794132219.954668,
+      "success": true,
+      "latency_seconds": 14.93,
+      "finished_at": 1794132234.879849
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794132234.880981,
+      "success": true,
+      "latency_seconds": 15.32,
+      "finished_at": 1794132250.198297
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794132250.199648,
+      "success": true,
+      "latency_seconds": 15.41,
+      "finished_at": 1794132265.613597
+    },
+    {
+      "kind": "draw",
+      "branch": "gemini",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794132265.614458,
+      "success": true,
+      "latency_seconds": 14.85,
+      "finished_at": 1794132280.459768
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794132280.461345,
+      "success": true,
+      "latency_seconds": 8.07,
+      "finished_at": 1794132288.527039
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794132288.528744,
+      "success": true,
+      "latency_seconds": 14.09,
+      "finished_at": 1794132302.621562
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1557,
+        "promptTokenCount": 58,
+        "totalTokenCount": 1615
+      },
+      "actual_size": [
+        1408,
+        768
+      ]
+    },
+    "latency_seconds": 13.37
+  },
+  "actual_image_size": [
+    1408,
+    768
+  ],
+  "finished_at": 1794132302.622507,
+  "dataset": "development"
+}

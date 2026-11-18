@@ -1,0 +1,41 @@
+{
+  "model": "gemini-3.8-flash",
+  "original_requirement": "生成一张横向的校园环保活动配图。画面左下方是一棵大树，树的右侧是一辆蓝色自行车；画面上半部分以浅蓝天空为主，留有可添加标题的空白。整体是简洁的扁平插画风格。不要出现人物、文字或标志。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "图片为横向构图"
+    },
+    {
+      "id": "C2",
+      "text": "大树位于画面左下方"
+    },
+    {
+      "id": "C3",
+      "text": "恰好一辆蓝色自行车"
+    },
+    {
+      "id": "C4",
+      "text": "自行车位于树的右侧"
+    },
+    {
+      "id": "C5",
+      "text": "上半部分主要是浅蓝天空，并有适合放标题的空白"
+    },
+    {
+      "id": "C6",
+      "text": "整体为简洁的扁平插画风格"
+    },
+    {
+      "id": "C7",
+      "text": "没有人物"
+    },
+    {
+      "id": "C8",
+      "text": "没有可见文字或标志"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "25142f8d32b8eb61a5963233ceec9285210b874ce3a4c887a4ffa56dc62b076d"
+}

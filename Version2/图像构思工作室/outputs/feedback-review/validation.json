@@ -1,0 +1,7 @@
+{
+  "tests_passed": 77,
+  "live_intent_and_vision": "passed on temporary copy",
+  "ui_flow": "analysis spinner, confirmation, updated target and plan, old-goal comparison excluded",
+  "original_task_modified": false,
+  "image_generation_in_live_validation": false
+}

@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "id": "C1",
+      "status": "pass",
+      "evidence": "画面中只有一个杯子。"
+    },
+    {
+      "id": "C2",
+      "status": "pass",
+      "evidence": "杯身为红色陶瓷。"
+    },
+    {
+      "id": "C3",
+      "status": "pass",
+      "evidence": "盘子上有两个可区分、彼此分开的牛角包。"
+    },
+    {
+      "id": "C4",
+      "status": "pass",
+      "evidence": "从观看者视角看，两个牛角包都在杯子右侧。"
+    },
+    {
+      "id": "C5",
+      "status": "pass",
+      "evidence": "杯子和装有牛角包的盘子都放在木桌上。"
+    },
+    {
+      "id": "C6",
+      "status": "pass",
+      "evidence": "背景以浅米色墙面为主。"
+    },
+    {
+      "id": "C7",
+      "status": "pass",
+      "evidence": "画面上方约四分之一为空旷的浅色区域，没有主要物体。"
+    },
+    {
+      "id": "C8",
+      "status": "pass",
+      "evidence": "画面中没有可见文字。"
+    }
+  ],
+  "priority_fixes": [],
+  "revised_prompt": "生成一张简洁的咖啡店宣传配图。木桌上恰好有一个红色陶瓷杯；从观看者视角看，杯子右侧有两个彼此分开的牛角包。背景为浅米色，画面上方留出约四分之一的空白区域，不要出现任何文字。"
+}

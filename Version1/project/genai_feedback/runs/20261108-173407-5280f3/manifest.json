@@ -1,0 +1,123 @@
+{
+  "task_id": "20261108-173407-5280f3",
+  "mock": false,
+  "started_at": 1794130447.623817,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 353,
+          "total_tokens": 14307,
+          "prompt_tokens": 13954,
+          "prompt_tokens_details": {
+            "cached_tokens": 10205
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 126
+          }
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"1\",\"status\":\"pass\",\"evidence\":\"画面展示了一家温暖、灯光柔和的咖啡店；前景木桌上清晰可见两个并排放置的蓝色杯子。\"}],\"priority_fixes\":[],\"revised_prompt\":\"画一家温暖的咖啡店，木桌上并排放着两个蓝色杯子。\"}"
+      },
+      "feedback_latency_seconds": 17.82,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1585,
+          "promptTokenCount": 19,
+          "totalTokenCount": 1604
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 16.63
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 111,
+          "promptTokenCount": 1190,
+          "thoughtsTokenCount": 303,
+          "totalTokenCount": 1604
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\n      \"id\": \"1\",\n      \"status\": \"pass\",\n      \"evidence\": \"A warm coffee shop setting with two blue ceramic cups placed side by side on a foreground wooden table.\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"一家温暖舒适的咖啡店内部，前景的木质长桌上并排放着两个盛有拿铁拉花的蓝色陶瓷杯。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 19.58,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1593,
+          "promptTokenCount": 30,
+          "totalTokenCount": 1623
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 19.19
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 808,
+          "completion_tokens": 290,
+          "total_tokens": 1098,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 223
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 808
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"1\",\"status\":\"pass\",\"evidence\":\"画面呈现暖光咖啡店内部；前景木桌上并排放置两个蓝色杯子，均带拉花。\"}],\"priority_fixes\":[],\"revised_prompt\":\"画一家温暖的咖啡店，木桌上并排放着两个蓝色杯子。\"}"
+      },
+      "feedback_latency_seconds": 13.79,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1571,
+          "promptTokenCount": 19,
+          "totalTokenCount": 1590
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 15.11
+    }
+  },
+  "draw_calls": 4,
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1543,
+        "promptTokenCount": 19,
+        "totalTokenCount": 1562
+      },
+      "actual_size": [
+        1408,
+        768
+      ]
+    },
+    "latency_seconds": 15.35
+  },
+  "finished_at": 1794130565.091337,
+  "requested_image_size": "1024x1024",
+  "actual_image_size": [
+    1408,
+    768
+  ]
+}

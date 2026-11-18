@@ -1,0 +1,11 @@
+{
+  "checks": [
+    {
+      "id": "1",
+      "status": "pass",
+      "evidence": "A warm coffee shop setting with two blue ceramic cups placed side by side on a foreground wooden table."
+    }
+  ],
+  "priority_fixes": [],
+  "revised_prompt": "一家温暖舒适的咖啡店内部，前景的木质长桌上并排放着两个盛有拿铁拉花的蓝色陶瓷杯。"
+}

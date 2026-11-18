@@ -1,0 +1,189 @@
+{
+  "task_id": "20261108-175136-eb0050",
+  "mock": false,
+  "started_at": 1794131496.5191512,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 1226,
+          "total_tokens": 15734,
+          "prompt_tokens": 14508,
+          "prompt_tokens_details": {
+            "cached_tokens": 10238
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 204
+          }
+        },
+        "raw_response": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中只有一个杯子。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"杯身为红色陶瓷。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"盘子上有两个可区分、彼此分开的牛角包。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"从观看者视角看，两个牛角包都在杯子右侧。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"杯子和装有牛角包的盘子都放在木桌上。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景以浅米色墙面为主。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面上方约四分之一为空旷的浅色区域，没有主要物体。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中没有可见文字。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张简洁的咖啡店宣传配图。木桌上恰好有一个红色陶瓷杯；从观看者视角看，杯子右侧有两个彼此分开的牛角包。背景为浅米色，画面上方留出约四分之一的空白区域，不要出现任何文字。\"\n}"
+      },
+      "feedback_latency_seconds": 18.01,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1538,
+          "promptTokenCount": 61,
+          "totalTokenCount": 1599
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 17.88
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 384,
+          "promptTokenCount": 1382,
+          "thoughtsTokenCount": 434,
+          "totalTokenCount": 2200
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\"id\": \"C1\", \"status\": \"pass\", \"evidence\": \"画面中仅有一个红色陶瓷杯。\"},\n    {\"id\": \"C2\", \"status\": \"pass\", \"evidence\": \"杯子主体为红色。\"},\n    {\"id\": \"C3\", \"status\": \"fail\", \"evidence\": \"两个牛角包紧挨在同一盘中互相贴合，未彼此分开。\"},\n    {\"id\": \"C4\", \"status\": \"pass\", \"evidence\": \"牛角包均位于杯子右侧。\"},\n    {\"id\": \"C5\", \"status\": \"pass\", \"evidence\": \"杯子与牛角包均放置在木桌上。\"},\n    {\"id\": \"C6\", \"status\": \"pass\", \"evidence\": \"背景以浅米色柔焦墙面为主。\"},\n    {\"id\": \"C7\", \"status\": \"pass\", \"evidence\": \"画面顶端约四分之一区域留白无主要物体。\"},\n    {\"id\": \"C8\", \"status\": \"pass\", \"evidence\": \"画面中未出现任何文字。\"}\n  ],\n  \"priority_fixes\": [\n    \"调整两个牛角包的间距，使其在桌面上保持一定距离、彼此分离。\"\n  ],\n  \"revised_prompt\": \"简洁的咖啡店宣传配图。木质桌面上恰好放有一个红色陶瓷咖啡杯；在杯子右侧放置恰好两个彼此完全分开、互不接触的牛角包。背景为浅米色柔焦咖啡馆墙面，画面上方预留出约四分之一干净的纯浅米色空白区域，画面中不要出现任何文字。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 19.85,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1550,
+          "promptTokenCount": 79,
+          "totalTokenCount": 1629
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 14.15
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 993,
+          "completion_tokens": 1244,
+          "total_tokens": 2237,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 842
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 993
+        },
+        "raw_response": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中仅见一个红色陶瓷杯，没有其他杯子。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"杯身主体为明显的红色陶瓷材质。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面右侧盘中有两个清晰可辨、彼此独立的牛角包。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"以观看者视角看，两个牛角包都位于杯子的右侧。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"杯子放在木桌上；牛角包放在盘子里，而该盘子也置于同一张木桌上。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景主要由浅米色、奶油色的墙面和顶部留白区域构成。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面上方约四分之一区域为纯浅米色空白，没有主要物体遮挡。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中没有可见的文字、标签或水印。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张简洁的咖啡店宣传配图。木桌上恰好有一个红色陶瓷杯；从观看者视角看，杯子右侧有两个彼此分开的牛角包。背景为浅米色，画面上方留出约四分之一的空白区域，不要出现任何文字。\"\n}"
+      },
+      "feedback_latency_seconds": 10.14,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1492,
+          "promptTokenCount": 61,
+          "totalTokenCount": 1553
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 15.83
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 4,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794131496.519159,
+      "success": true,
+      "latency_seconds": 17.0,
+      "finished_at": 1794131513.519548
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794131513.521975,
+      "success": true,
+      "latency_seconds": 18.01,
+      "finished_at": 1794131531.535692
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794131531.5363688,
+      "success": true,
+      "latency_seconds": 17.88,
+      "finished_at": 1794131549.413366
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794131549.414154,
+      "success": true,
+      "latency_seconds": 19.85,
+      "finished_at": 1794131569.2676961
+    },
+    {
+      "kind": "draw",
+      "branch": "gemini",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794131569.2687502,
+      "success": true,
+      "latency_seconds": 14.15,
+      "finished_at": 1794131583.420156
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794131583.4230442,
+      "success": true,
+      "latency_seconds": 10.14,
+      "finished_at": 1794131593.562627
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794131593.563877,
+      "success": true,
+      "latency_seconds": 15.83,
+      "finished_at": 1794131609.3893068
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1572,
+        "promptTokenCount": 61,
+        "totalTokenCount": 1633
+      },
+      "actual_size": [
+        1408,
+        768
+      ]
+    },
+    "latency_seconds": 17.0
+  },
+  "actual_image_size": [
+    1408,
+    768
+  ],
+  "finished_at": 1794131609.391994,
+  "dataset": "development"
+}
